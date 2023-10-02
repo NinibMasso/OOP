@@ -7,7 +7,6 @@ public abstract class Växter implements LiquidPerDay {
     protected String sortsVätska; //inkapsulering
     protected double mängdVätska; //inkapsulering
     protected String sortsVäxt; //inkapsulering
-    protected String enhet;
 
     public Växter(String namn, double längd) {
         this.namn = namn;
