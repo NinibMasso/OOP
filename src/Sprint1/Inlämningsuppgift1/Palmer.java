@@ -8,13 +8,15 @@ public class Palmer extends Växter implements LiquidPerDay {
         sortsVätska = "kranvatten";
     }
     public double calculateLiquidPerDay(double längd) { //polymorfism
-        double vatten = mängdVätska * längd;
-        return vatten;
+        mängdVätska = mängdVätska * längd;
+        return mängdVätska;
     }
 
-    public String getSortsVätska() {
+    /*public String getSortsVätska() {
         return sortsVätska;
     }
+
+     */
 
 
 }

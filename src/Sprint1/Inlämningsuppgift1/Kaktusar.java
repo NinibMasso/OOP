@@ -12,9 +12,11 @@ public class Kaktusar extends Växter implements LiquidPerDay {
         return mängdVätska;
     }
 
-    public String getSortsVätska() {
+    /*public String getSortsVätska() {
         return sortsVätska;
     }
+
+     */
 
 
 }
