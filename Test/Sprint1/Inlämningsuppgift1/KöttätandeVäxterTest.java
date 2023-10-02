@@ -11,6 +11,6 @@ class KöttätandeVäxterTest {
     @Test
     void calculateLiquidPerDay() {
         double result = k.calculateLiquidPerDay(k.getLängd());
-        assert(result == 24);
+        assert(result == 0.24);
     }
 }
