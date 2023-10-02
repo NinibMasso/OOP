@@ -28,6 +28,7 @@ public abstract class Växter implements LiquidPerDay {
     public String getSortsVäxt() {
         return sortsVäxt;
     }
+
     public double calculateLiquidPerDay(double längd) { //Polymorfism
         return 0;
     }
