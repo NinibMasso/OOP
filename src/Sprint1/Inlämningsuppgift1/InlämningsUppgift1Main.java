@@ -12,10 +12,13 @@ public class InlämningsUppgift1Main {
         allaVäxter.add(new Palmer("Laura", 5.0));
         allaVäxter.add(new KöttätandeVäxter("Meatloaf", 0.7));
         allaVäxter.add(new Palmer("Olof", 1.0));
-
-        String userInput = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska?");
-        Växter v = hittaVäxten(allaVäxter, userInput);
-        visaMeddelande(v);
+        try {
+            String userInput = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska?");
+            Växter v = hittaVäxten(allaVäxter, userInput);
+            visaMeddelande(v);
+        } catch (NullPointerException e){
+            JOptionPane.showMessageDialog(null, "Avbrutet, stänger ner programmet");
+        }
     }
 
     public static void main(String[] args) {
