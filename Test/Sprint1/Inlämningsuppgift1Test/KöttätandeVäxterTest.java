@@ -1,6 +1,7 @@
 package Sprint1.Inlämningsuppgift1Test;
 
 import Sprint1.Inlämningsuppgift1.KöttätandeVäxter;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,7 +12,8 @@ class KöttätandeVäxterTest {
 
     @Test
     void calculateLiquidPerDay() {
-        double result = k.calculateLiquidPerDay(k.getLängd());
-        assert (result == 0.24);
+        double actualResult = 0.24;
+        double expectedResult = k.calculateLiquidPerDay(k.getLängd());
+        Assertions.assertEquals (expectedResult, actualResult);
     }
 }

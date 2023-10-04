@@ -1,6 +1,7 @@
 package Sprint1.Inlämningsuppgift1Test;
 
 import Sprint1.Inlämningsuppgift1.Palmer;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,9 +12,13 @@ class PalmerTest {
 
     @Test
     void calculateLiquidPerDay() {
-        double result = p.calculateLiquidPerDay(p.getLängd());
-        assert (result == 2.5);
-        double result2 = p1.calculateLiquidPerDay(p1.getLängd());
-        assert (result2 == 0.5);
+
+        double actualResult = 2.5;
+        double expectedResult = p.calculateLiquidPerDay(p.getLängd());
+        Assertions.assertEquals(expectedResult, actualResult);
+
+        double actualResult1 = 0.5;
+        double expectedResult1 = p1.calculateLiquidPerDay(p1.getLängd());
+        Assertions.assertEquals(expectedResult1, actualResult1);
     }
 }

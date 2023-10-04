@@ -1,9 +1,8 @@
 package Sprint1.Inlämningsuppgift1Test;
 
 import Sprint1.Inlämningsuppgift1.Kaktusar;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class KaktusarTest {
 
@@ -11,7 +10,8 @@ class KaktusarTest {
 
     @Test
     void calculateLiquidPerDay() {
-        double result = k.calculateLiquidPerDay(k.getLängd());
-        assert (result == 0.02);
+        double actualResult = 0.02;
+        double expectedResult = k.calculateLiquidPerDay(k.getLängd());
+        Assertions.assertEquals (expectedResult, actualResult);
     }
 }
