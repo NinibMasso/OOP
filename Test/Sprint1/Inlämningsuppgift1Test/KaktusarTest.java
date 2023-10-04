@@ -1,5 +1,6 @@
-package Sprint1.Inlämningsuppgift1;
+package Sprint1.Inlämningsuppgift1Test;
 
+import Sprint1.Inlämningsuppgift1.Kaktusar;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
