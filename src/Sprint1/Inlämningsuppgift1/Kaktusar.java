@@ -1,6 +1,6 @@
 package Sprint1.Inlämningsuppgift1;
 
-public class Kaktusar extends Växter implements LiquidPerDay {
+public class Kaktusar extends Växter {
 
     public Kaktusar(String namn, double längd) {
         super(namn, längd);
