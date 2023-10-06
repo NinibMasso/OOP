@@ -8,7 +8,7 @@ public class InlämningsUppgift1Main {
 
     InlämningsUppgift1Main() {
         List<Växter> allaVäxter = new ArrayList<>();
-        allaVäxter.add(new Kaktusar("Igge", 0.2));
+        allaVäxter.add(new Kaktusar("Igge", 0.2)); //Polymorfism
         allaVäxter.add(new Palmer("Laura", 5.0));
         allaVäxter.add(new KöttätandeVäxter("Meatloaf", 0.7));
         allaVäxter.add(new Palmer("Olof", 1.0));
