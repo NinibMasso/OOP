@@ -14,6 +14,7 @@ public class InlämningsUppgift1Main {
         allaVäxter.add(new Palmer("Olof", 1.0));
         try {
             String userInput = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska?");
+            userInput = userInput.toLowerCase();
             Växter v = hittaVäxten(allaVäxter, userInput);
             visaMeddelande(v);
         } catch (NullPointerException e){
@@ -27,7 +28,8 @@ public class InlämningsUppgift1Main {
 
     public Växter hittaVäxten(List<Växter> allaVäxter, String input) {
         for (Växter v : allaVäxter) {
-            if (v.getNamn().compareTo(input) == 0) {
+            String växtNamnLowerCase = v.getNamn().toLowerCase();
+            if (växtNamnLowerCase.compareTo(input) == 0) {
                 return v;
             }
         }
