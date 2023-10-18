@@ -29,7 +29,7 @@ public class FileManagement {
                 list.add(new Person(personNr, name, date));
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found exception");
+            System.out.println("Kan inte hitta filen som ska läsas in.");
             e.printStackTrace();
         } catch (IOException e) {
             System.out.println("IO Exception");
