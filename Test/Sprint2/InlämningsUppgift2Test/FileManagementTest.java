@@ -41,8 +41,8 @@ public class FileManagementTest {
             DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd, HH:mm:ss");
             LocalDateTime today = LocalDateTime.now();
             String expectedLine = "Alhambra Aromes, 7703021234, " + df.format(today);
-            String currentLine = null;
-            String actualLine = null;
+            String currentLine = "";
+            String actualLine = "";
             while ((currentLine = bf.readLine()) != null) {
                 actualLine = currentLine;
             }
