@@ -15,8 +15,7 @@ public class Githubtest extends JFrame implements FocusListener {
     JButton jb2 = new JButton("Knapp 2");
     JTextField text = new JTextField("Första");
 
-    //kommenterar för ändringar branchA
-    //ändra ändra
+    //konflikt från branchA
 
     //Sista ändringen
 
