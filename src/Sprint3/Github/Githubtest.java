@@ -16,6 +16,7 @@ public class Githubtest extends JFrame implements FocusListener {
     JTextField text = new JTextField("Första");
 
     //konflikt från branchA
+    //konflikt
 
     //Sista ändringen
 
