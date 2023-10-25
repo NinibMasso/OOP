@@ -1,6 +1,6 @@
 package Sprint2.InlämningsUppgift2Test;
 
-import Sprint2.InlämningsUppgift2.Person;
+import Sprint3.PengarTillbaka.InlämningsUppgift2.Person;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

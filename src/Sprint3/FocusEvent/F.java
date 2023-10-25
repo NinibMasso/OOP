@@ -1,13 +1,10 @@
-package Sprint3.Github;
+package Sprint3.FocusEvent;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
-public class Githubtest extends JFrame implements FocusListener {
+public class F extends JFrame implements FocusListener {
 
     JFrame jfr = new JFrame();
     JPanel jp = new JPanel();
@@ -15,12 +12,9 @@ public class Githubtest extends JFrame implements FocusListener {
     JButton jb2 = new JButton("Knapp 2");
     JTextField text = new JTextField("Första");
 
-    //kommenterar för ändringar branchA
-    //ändra ändra
 
 
-
-    Githubtest(){
+    F(){
 
         this.add(jp);
         jp.add(jb1);
@@ -50,7 +44,7 @@ public class Githubtest extends JFrame implements FocusListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     public static void main(String[] args) {
-        Githubtest f = new Githubtest();
+        F f = new F();
     }
     @Override
     public void focusGained(FocusEvent e) {
